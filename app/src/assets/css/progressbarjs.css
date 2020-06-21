@@ -1,0 +1,9 @@
+/*
+Theme Name: Progress Bar JS
+Author: Luan Novais
+Author URI: https://github.com/luan11/
+Description: A simple way to create manipulable progress bars with JavaScript.
+Version: 1.0.0
+*/
+.progress-bar,.progress-bar>.bar{width:100%;box-shadow:inset 0 2px 6px rgba(35,41,46,.35)}.progress-bar{background-color:#FEFEFE;height:25px;position:relative;overflow:hidden}.progress-bar>.bar{position:absolute;left:0;top:0;height:100%;display:block;background-color:#6eb3e0;transform:translateX(-60%);cursor:pointer;transition:transform .55s ease-in-out,opacity .3s}.progress-bar>.bar:hover{opacity:.75}.progress-bar.gradient>.bar{background-image:linear-gradient(45deg,#6eb3e0 60%,#2475aa)}.progress-bar.striped>.bar{background-image:repeating-linear-gradient(45deg,#449dd7,#449dd7 .75rem,transparent 0,transparent 1.5rem)}.progress-bar.striped.animated>.bar{background-size:200% 200%;-webkit-animation:striped_animation 12s linear infinite;animation:striped_animation 12s linear infinite}.progress-bar.rounded{border-radius:6px}.progress-bar.success>.bar{background-color:#6ac479}.progress-bar.alert>.bar{background-color:#e6c469}.progress-bar.error>.bar{background-color:#d15656}@-webkit-keyframes striped_animation{100%{background-position:100% 100%}}@keyframes striped_animation{100%{background-position:100% 100%}}
+/*# sourceMappingURL=maps/progressbarjs.css.map */

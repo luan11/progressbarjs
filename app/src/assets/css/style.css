@@ -1,9 +1,9 @@
 /*
-Theme Name: INSERT NAME OF PROJECT HERE
-Author: INSERT THE NAME OF PROJECT AUTHOR HERE
+Theme Name: Progress Bar JS
+Author: Luan Novais
 Author URI: https://github.com/luan11/
-Description: INSERT DESCRIPTION OF PROJECT HERE
+Description: A simple way to create manipulable progress bars with JavaScript.
 Version: 1.0.0
 */
-body{background-color:#c5c5c5}@media screen and (max-width:768px){body{background-color:#fff}h1{font-family:sans-serif;color:red}}
+a,header a{text-decoration:none;color:#5356A9}header,section{position:relative;width:100%}html{box-sizing:border-box;font-size:16px}*,:after,:before{box-sizing:inherit}body,h1,h2,h3,h4,h5,h6,ol,p,ul{margin:0;padding:0;font-weight:400}ol,ul{list-style:none}img{max-width:100%;height:auto}body{font-family:Poppins,sans-serif;background-color:#fafafa;transition:all .45s}.section-title,a{transition:all .35s}body.dark-theme{background-color:#23292e}.container{width:100%;margin:0 auto;padding:0 15px}header{background-color:#ecf4f6;padding:25px 0;text-align:left}.dark-theme header{background-color:rgba(115,147,153,.15)}header a{font-weight:500;font-size:28px}.dark-theme header a{color:#8587c3}header a:hover{color:#75AEBA}.dark-theme header a:hover{color:#5356A9}section{padding:60px 0}section:not(:last-child){border-bottom:10px solid #ecf4f6}.dark-theme section:not(:last-child){border-color:rgba(115,147,153,.55)}.section-title{color:#5356A9;margin-bottom:10px;padding-bottom:10px;border-bottom:2px solid #ececf6}.dark-theme .section-title{border-color:rgba(115,147,153,.55);color:#75AEBA}.section-title::before{content:'#';margin-right:10px}.bold{font-weight:700!important}.item{width:100%;margin:25px 0 0;background-color:rgba(117,174,186,.05);padding:25px 15px;border-radius:8px}.item-title{font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#5356A9;margin-bottom:35px}.dark-theme .item-title{color:#8587c3}@media screen and (min-width:481px){.container{width:540px}}@media screen and (min-width:768px){.container{width:720px}}@media screen and (min-width:992px){.container{width:960px}}@media screen and (min-width:1201px){.container{width:1140px}}
 /*# sourceMappingURL=maps/style.css.map */

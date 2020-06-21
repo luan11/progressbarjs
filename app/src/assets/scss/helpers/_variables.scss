@@ -10,3 +10,22 @@ $screen-md: 991 !default;
 
 /* Wide Desktop */
 $screen-lg: 1200 !default;
+
+// Font
+// Weight
+$font-weight-regular: 	400 !default;
+$font-weight-medium: 	500 !default;
+$font-weight-bold:		700 !default;
+
+// Colors
+$dark-sky-blue:				#75AEBA !default;
+$dark-sky-blue-dark-theme:	#739399 !default;
+$liberty:					#5356A9 !default;
+$liberty-dark-theme:		lighten($liberty, 15%) !default;
+$bg-dark:					#23292e !default;
+$bg-light:					#fafafa !default;
+$bar-bg: 					#FEFEFE !default;
+$bar-color-default:			#6eb3e0 !default;
+$bar-color-success:			#6ac479 !default;
+$bar-color-alert:			#e6c469 !default;
+$bar-color-error:			#d15656 !default;

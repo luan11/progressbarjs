@@ -37,3 +37,27 @@
         @content;
     }
 }
+
+@mixin xs-up($min: $screen-xs + 1) {
+    @include responsive($type: 'MIN', $min: $min){
+        @content;
+    }
+}
+
+@mixin sm-up($min: $screen-sm + 1) {
+    @include responsive($type: 'MIN', $min: $min){
+        @content;
+    }
+}
+
+@mixin md-up($min: $screen-md + 1) {
+    @include responsive($type: 'MIN', $min: $min){
+        @content;
+    }
+}
+
+@mixin lg-up($min: $screen-lg + 1) {
+    @include responsive($type: 'MIN', $min: $min){
+        @content;
+    }
+}

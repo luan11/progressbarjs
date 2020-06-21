@@ -106,7 +106,21 @@ gulp.task('compilerSASS', () => {
         'Version: <%= projectInfo.version %>',
         '*/',
         ''
-    ].join('\n');
+	].join('\n');
+	
+	gulp.src(`${paths.dev.scss}progressbarjs.scss`)
+	.pipe(plumber())
+    .pipe(sourceMaps.init({ loadMaps: true }))
+        .pipe(sass())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(mqGroup())
+        .pipe(cssmin())
+        .pipe(header(banner, { projectInfo }))
+    .pipe(sourceMaps.write('./maps'))
+	.pipe(gulp.dest(`${paths.dev.css}`))
+	.pipe(browserSync.stream());
 
 	return gulp.src(`${paths.dev.scss}style.scss`)
 	.pipe(plumber())

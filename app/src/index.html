@@ -6,8 +6,110 @@
 	<title>Progress Bar JS</title>
 	<meta name="author" content="Luan Novais">
 	<meta name="description" content="A simple way to create manipulable progress bars with JavaScript.">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/progressbarjs.css">
 </head>
-<body>
-	
+<body class="">
+	<header>
+		<div class="container">
+			<a href="#">Progress Bar JS</a>
+		</div>
+	</header>
+
+	<main>
+		<section>
+			<div class="container">
+				<h2 class="section-title">Bar: <span class="bold">Styles</a></h2>
+
+				<div class="item">
+					<h4 class="item-title">Default</h4>
+
+					<div class="progress-bar" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">Alert</h4>
+
+					<div class="progress-bar alert" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">Error</h4>
+
+					<div class="progress-bar error" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">Success</h4>
+
+					<div class="progress-bar success" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status" data-progress-bar-status-text="Loaded: {percentage}%"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<h2 class="section-title">Bar: <span class="bold">Variants</a></h2>
+
+				<div class="item">
+					<h4 class="item-title">{Style} + Rounded</h4>
+
+					<div class="progress-bar rounded" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">{Style} + Gradient</h4>
+
+					<div class="progress-bar gradient" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">{Style} + Striped</h4>
+
+					<div class="progress-bar striped" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">{Style} + Striped + Animated</h4>
+
+					<div class="progress-bar striped animated" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">{Style} + Striped + Animated + Rounded</h4>
+
+					<div class="progress-bar striped animated rounded" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+						<span class="bar-status"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
