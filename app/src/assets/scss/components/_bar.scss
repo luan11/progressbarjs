@@ -15,32 +15,16 @@
 		display: block;
 		background-color: $bar-color-default;
 		box-shadow: inset 0 2px 6px rgba($bg-dark, 0.35);
-		transform: translateX(-60%);
-		cursor: pointer;
-		transition: transform .55s ease-in-out, opacity .3s;
-
-		&:hover {
-			opacity: 0.75;
-		}
+		transform: translateX(-100%);
+		transition: transform .55s ease-in-out;
 	}
 
 	&.gradient {
-		> .bar {
-			background-image: linear-gradient(45deg, $bar-color-default 60%, darken($bar-color-default, 25%));
-		}	
+		@include make-gradient($bar-color-default);
 	}
 
 	&.striped {
-		> .bar {
-			background-image: repeating-linear-gradient(45deg, darken($bar-color-default, 10%), darken($bar-color-default, 10%) 0.75rem, transparent 0, transparent 1.5rem);
-		}
-
-		&.animated {
-			> .bar {
-				background-size: 200% 200%;
-				animation: striped_animation 12s linear infinite;
-			}
-		}
+		@include make-striped($bar-color-default);
 	}
 
 	&.rounded {
@@ -51,17 +35,41 @@
 		> .bar {
 			background-color: $bar-color-success;
 		}
+
+		&.gradient {
+			@include make-gradient($bar-color-success);
+		}
+	
+		&.striped {
+			@include make-striped($bar-color-success);
+		}
 	}
 
 	&.alert {
 		> .bar {
 			background-color: $bar-color-alert;
 		}
+		
+		&.gradient {
+			@include make-gradient($bar-color-alert);
+		}
+	
+		&.striped {
+			@include make-striped($bar-color-alert);
+		}
 	}
 
 	&.error {
 		> .bar {
 			background-color: $bar-color-error;
+		}
+
+		&.gradient {
+			@include make-gradient($bar-color-error);
+		}
+	
+		&.striped {
+			@include make-striped($bar-color-error);
 		}
 	}
 }

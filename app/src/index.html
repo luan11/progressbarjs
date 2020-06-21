@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/progressbarjs.css">
 </head>
-<body class="">
+<body>
 	<header>
 		<div class="container">
 			<a href="#">Progress Bar JS</a>
@@ -20,32 +20,13 @@
 	<main>
 		<section>
 			<div class="container">
-				<h2 class="section-title">Bar: <span class="bold">Styles</a></h2>
+				<h2 class="section-title">Bar: <span class="bold">Types</a></h2>
 
 				<div class="item">
 					<h4 class="item-title">Default</h4>
 
 					<div class="progress-bar" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
-					</div>
-				</div>
-
-				<div class="item">
-					<h4 class="item-title">Alert</h4>
-
-					<div class="progress-bar alert" data-progress-bar-percentage="25">
-						<span class="bar"></span>
-						<span class="bar-status"></span>
-					</div>
-				</div>
-
-				<div class="item">
-					<h4 class="item-title">Error</h4>
-
-					<div class="progress-bar error" data-progress-bar-percentage="25">
-						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 
@@ -54,7 +35,22 @@
 
 					<div class="progress-bar success" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status" data-progress-bar-status-text="Loaded: {percentage}%"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">Alert</h4>
+
+					<div class="progress-bar alert" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">Error</h4>
+
+					<div class="progress-bar error" data-progress-bar-percentage="25">
+						<span class="bar"></span>
 					</div>
 				</div>
 			</div>
@@ -65,51 +61,48 @@
 				<h2 class="section-title">Bar: <span class="bold">Variants</a></h2>
 
 				<div class="item">
-					<h4 class="item-title">{Style} + Rounded</h4>
+					<h4 class="item-title">{Type} + Rounded</h4>
 
 					<div class="progress-bar rounded" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 
 				<div class="item">
-					<h4 class="item-title">{Style} + Gradient</h4>
+					<h4 class="item-title">{Type} + Gradient</h4>
 
 					<div class="progress-bar gradient" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 
 				<div class="item">
-					<h4 class="item-title">{Style} + Striped</h4>
+					<h4 class="item-title">{Type} + Striped</h4>
 
 					<div class="progress-bar striped" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 
 				<div class="item">
-					<h4 class="item-title">{Style} + Striped + Animated</h4>
+					<h4 class="item-title">{Type} + Striped + Animated</h4>
 
 					<div class="progress-bar striped animated" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 
 				<div class="item">
-					<h4 class="item-title">{Style} + Striped + Animated + Rounded</h4>
+					<h4 class="item-title">{Type} + Striped + Animated + Rounded</h4>
 
 					<div class="progress-bar striped animated rounded" data-progress-bar-percentage="25">
 						<span class="bar"></span>
-						<span class="bar-status"></span>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+
+	<script src="./assets/scripts/bundle.min.js"></script>
 </body>
 </html>
