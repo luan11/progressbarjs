@@ -1,7 +1,7 @@
 {
-    "name": "INSERT NAME OF PROJECT HERE",
-    "description": "INSERT DESCRIPTION OF PROJECT HERE",
-    "author": "INSERT THE NAME OF PROJECT AUTHOR HERE",
+    "name": "Progress Bar JS",
+    "description": "A simple way to create manipulable progress bars with JavaScript.",
+    "author": "Luan Novais",
     "author_uri": "https://github.com/luan11/",
     "version": "1.0.0"
 }

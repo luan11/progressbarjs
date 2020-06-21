@@ -1,2 +1,5 @@
 # Ignored files/folders
 /node_modules
+/.vscode
+/package-lock.json
+/yarn.lock
