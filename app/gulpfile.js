@@ -34,7 +34,8 @@ gulp.task('compilerES:dev', () => {
 	.pipe(webpack_stream({
 		mode: 'development',
 		output: {
-			filename: 'bundle.min.js'
+			filename: 'progressbar.js',
+			library: 'ProgressBar'
 		},
 		module: {
 			rules: [

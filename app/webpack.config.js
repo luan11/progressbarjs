@@ -3,7 +3,8 @@ module.exports = {
     entry: ['@babel/polyfill', './src/assets/scripts/js/main.js'],
     output: {
         path: __dirname + '/src/assets/scripts',
-        filename: 'bundle.min.js'
+		filename: 'progressbar.js',
+		library: 'ProgressBar'
     },
     module: {
         rules: [

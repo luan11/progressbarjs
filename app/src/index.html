@@ -61,6 +61,22 @@
 				<h2 class="section-title">Bar: <span class="bold">Variants</a></h2>
 
 				<div class="item">
+					<h4 class="item-title">{Type} + Thin</h4>
+
+					<div class="progress-bar thin" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+					</div>
+				</div>
+
+				<div class="item">
+					<h4 class="item-title">{Type} + No shadow</h4>
+
+					<div class="progress-bar no-shadow" data-progress-bar-percentage="25">
+						<span class="bar"></span>
+					</div>
+				</div>
+
+				<div class="item">
 					<h4 class="item-title">{Type} + Rounded</h4>
 
 					<div class="progress-bar rounded" data-progress-bar-percentage="25">
@@ -103,6 +119,25 @@
 		</section>
 	</main>
 
-	<script src="./assets/scripts/bundle.min.js"></script>
+	<script src="./assets/scripts/progressbar.js"></script>
+
+	<script>
+		function randomPercentage() {
+			return Math.floor(Math.random() * 101);
+		}
+
+		var progressBars = {};
+		const progressBarsEls = document.querySelectorAll('.progress-bar');
+
+		progressBarsEls.forEach((el, key) => {
+			progressBars[`item_${key}`] = new ProgressBar({
+				el: el
+			});
+
+			const percentage = randomPercentage();
+
+			setTimeout((pb, p) => pb.setPercentage(p), 1000 + percentage, progressBars[`item_${key}`], percentage);
+		});
+	</script>
 </body>
 </html>

@@ -1,1 +1,1 @@
-import ProgressBar from './app/ProgressBar';
+module.exports = require('./app/ProgressBar').default;

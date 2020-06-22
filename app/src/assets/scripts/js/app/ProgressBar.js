@@ -21,11 +21,11 @@ class ProgressBar {
 			p = 100;
 		}
 
-		return p;
+		return Number(p.toFixed(2));
 	}
 
 	_animate() {
-		const translate = (100 - this.percentage) * -1;
+		const translate = Number(((100 - this.percentage) * -1).toFixed(2));
 		this.barEl.style.transform = `translateX(${translate}%)`;
 	}
 
